@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía: Subir un archivo a GitHub usando Git</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 5px;
+            display: block;
+            margin-bottom: 10px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .divsitos {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guía: Subir un archivo a GitHub usando Git</h1>
+
+    <div class="divsitos">
+        <h2>Paso 1: Instalar Git</h2>
+        <p>Si aún no tienes Git instalado, puedes descargarlo e instalarlo desde <a href="https://git-scm.com/" target="_blank">aquí</a>. Sigue las instrucciones de instalación para tu sistema operativo.</p>
+    </div>
+
+    <div class="divsitos">
+        <h2>Paso 2: Configurar Git</h2>
+        <p>Abre una terminal y configura tu nombre de usuario y correo electrónico:</p>
+        <pre><code>git config --global user.name "Tu Nombre"
+git config --global user.email "tuemail@example.com"</code></pre>
+    </div>
+
+    <div class="divsitos">
+        <h2>Paso 3: Crear un repositorio en GitHub</h2>
+        <p>Ve a <a href="https://github.com/" target="_blank">GitHub</a> y crea un nuevo repositorio. Anota la URL del repositorio, la necesitarás más adelante.</p>
+    </div>
+
+    <div class="divsitos">
+        <h2>Paso 4: Inicializar un repositorio local</h2>
+        <p>En la terminal, navega a la carpeta donde deseas crear tu proyecto y ejecuta:</p>
+        <pre><code>git init</code></pre>
+    </div>
+
+    <div class="divsitos">
+        <h2>Paso 5: Añadir un archivo</h2>
+        <p>Crea un archivo nuevo en tu proyecto (por ejemplo, <code>archivo.txt</code>). Luego, agrega este archivo al área de preparación:</p>
+        <pre><code>git add archivo.txt</code></pre>
+    </div>
+
+    <div class="divsitos">
+        <h2>Paso 6: Hacer un commit</h2>
+        <p>Realiza un commit con un mensaje descriptivo:</p>
+        <pre><code>git commit -m "Añadir archivo.txt"</code></pre>
+    </div>
+
+    <div class="divsitos">
+        <h2>Paso 7: Enlazar el repositorio local con GitHub</h2>
+        <p>Enlaza tu repositorio local con el repositorio remoto en GitHub usando la URL que anotaste en el paso 3:</p>
+        <pre><code>git remote add origin https://github.com/tuusuario/turepositorio.git</code></pre>
+    </div>
+
+    <div class="divsitos"> 
+        <h2>Paso 8: Subir los cambios a GitHub</h2>
+        <p>Sube tus cambios al repositorio remoto en GitHub:</p>
+        <pre><code>git push -u origin master</code></pre>
+        <p>Si es la primera vez que subes, Git te pedirá que ingreses tus credenciales de GitHub.</p>
+    </div>
+
+    <h3>¡Listo!</h3>
+    <p>Ahora tu archivo debería estar en tu repositorio de GitHub. Puedes verificarlo accediendo a la URL del repositorio en tu navegador.</p>
+</body>
+</html>
